@@ -1,0 +1,29 @@
+ALGORITHM algorithme_checkpoint
+VAR
+   voy : INTEGER;
+   words : INTEGER;
+   character : INTEGER ;
+
+   
+BEGIN
+  
+       DECLARE input_sentence STRING
+       INPUT input_sentence
+ FOR EACH character IN input_sentence DO
+    //Increment the sentence character
+         character = character +1
+    //check IF the character is a letter (a-z;A-Z) 
+    IF isAlpha(character) THEN
+    //check if the characteris a voy (a,e,i,o,u)
+             IF IsVoy(character) THEN
+            voy = voy +1
+             END_IF
+    END_IF
+    //check IF the character is a space 
+    IF character == ' ' THEN
+       words = words +1 
+    END_IF
+END FOR
+    //add 1 to word to account for the last word 
+    word = word +1
+END
