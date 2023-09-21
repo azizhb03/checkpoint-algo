@@ -8,7 +8,7 @@ VAR
 BEGIN
   
        DECLARE input_sentence STRING
-       INPUT input_sentence
+        read(input_sentence)
  FOR EACH character IN input_sentence DO
     //Increment the sentence character
          character = character +1
@@ -26,4 +26,8 @@ BEGIN
 END FOR
     //add 1 to word to account for the last word 
     word = word +1
+
+    write('number of words is',words)
+    write('number of voy is',voy)
+    write('number of character is',character)
 END
