@@ -20,14 +20,14 @@ BEGIN
              END_IF
     END_IF
     //check IF the character is a space 
-    IF character == ' ' THEN
+    IF character == " " THEN
        words = words +1 
     END_IF
 END FOR
     //add 1 to word to account for the last word 
     word = word +1
 
-    write('number of words is',words)
-    write('number of voy is',voy)
-    write('number of character is',character)
+    write("number of words is",words)
+    write("number of voy is",voy)
+    write("number of character is",character)
 END
